@@ -33,26 +33,6 @@
 
 ---
 
-> [!NOTE]
-> If you’re using **Sections** view type, some cards may look “compressed.”
-> Try setting `rows: 1.5` on the card’s `grid_options` if needed.
->
-> ```yaml
-> grid_options:
->   rows: 1.5
-> ```
-
-> [!TIP]
-> Want to force a custom card background / text colors (light-mode friendly)?
-> Add the following to your `ha-card` styles:
->
-> ```yaml
-> background: #1C1C1C !important;
-> --card-primary-color: white !important;
-> --card-secondary-color: white !important;
-> ```
-
----
 
 ## ✅ Supported leagues
 
