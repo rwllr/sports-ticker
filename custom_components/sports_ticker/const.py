@@ -1,3 +1,10 @@
+import datetime
+
+# Create the date range string: YYYYMMDD-YYYYMMDD
+yesterday = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y%m%d")
+tomorrow = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime("%Y%m%d")
+date_range = f"{yesterday}-{tomorrow}"
+
 DOMAIN = "sports_ticker"
 
 PLATFORMS = ["sensor"]
@@ -26,7 +33,7 @@ LEAGUES = {
     "cfb": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
 
     # ✅ NEW
-    "epl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard",
+    "epl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates={date_range}",
     "pga": "https://site.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard",
     "nascar": "https://site.api.espn.com/apis/site/v2/sports/racing/nascar-premier/scoreboard",
 }
