@@ -26,6 +26,7 @@ LEAGUES = {
     "cfb": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
 
     # ✅ NEW
+    "epl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard",
     "pga": "https://site.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard",
     "nascar": "https://site.api.espn.com/apis/site/v2/sports/racing/nascar-premier/scoreboard",
 }
