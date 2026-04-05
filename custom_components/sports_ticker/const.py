@@ -27,7 +27,7 @@ DEFAULT_POLL_INTERVAL = 60  # seconds
 LEAGUES = {
     "mlb": "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard",
     "nfl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-    "nba": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard",
+    "nba": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={date_range}",
     "nhl": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
     "wnba": "https://site.api.espn.com/apis/site/v2/sports/basketball/wnba/scoreboard",
     "cfb": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
